@@ -4,5 +4,14 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  background-color: #FB8500;
+  color: black;
+  border: none;
+  padding: 10px 32px;
+  margin: 8px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
 }
+
+
