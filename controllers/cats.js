@@ -4,7 +4,6 @@ function show(req, res) {
     fetch(CAT_ROOT)
         .then(res => res.json())
         .then(catFact => {
-            console.log(catFact);
             res.render('cats/fact', { catFact, title: 'Enjoy this Cat Fact!' })
         });
 }
