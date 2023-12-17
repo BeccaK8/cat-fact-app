@@ -8,6 +8,19 @@ function show(req, res) {
         });
 }
 
+function showMany(req, res) {
+    const CAT_ROOT = 'https://catfact.ninja/facts';
+
+    fetch(CAT_ROOT)
+        .then(res => res.json())
+        .then(catFacts => {
+            console.log(catFacts);
+            res.render('cats/manyfacts', { catFacts: catFacts.data, title: 'Enjoy these Cat Facts!' })
+        });
+}
+
+
 module.exports = { 
-    show
+    show,
+    showMany
 };

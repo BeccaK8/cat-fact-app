@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+
+<% catFacts.forEach(cf => { %>
+    <h3><%= cf.fact %></h3>
+    <br>
+<% }) %>
+
+<a href="/cats/fact">Get Another Cat Fact!</a>
+
+<%- include('../partials/footer') %>
